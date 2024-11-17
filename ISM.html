@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #6363d2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: left;
+      min-height: 100vh;
+    }
+    .container {
+      width: 80%;
+      max-width: 800px;
+      background: #10dd4aad;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(196, 80, 80, 0.1);
+    }
+    .header {
+      text-align: left;
+      padding-bottom: 20px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    .nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px 10px;
+      border-radius: 5px;
+      background-color: #c5e7d0cf;
+      transition: background-color 0.3s;
+    }
+    .nav a:hover {
+      background-color: #c2c2c2;
+    }
+    .module {
+      display: none;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+    .module.active {
+      display: block;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 0;
+    }
+    input[type="text"], input[type="password"], input[type="email"], button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><strong> Management System</strong></h1>
+    </div>
+    <div class="nav">
+      <a href="#" onclick="showModule('registration')">Registration</a>
+      <a href="#" onclick="showModule('login')">Login</a>
+      <a href="#" onclick="showModule('finance')">Finance</a>
+      <a href="#" onclick="showModule('departments')">Departments</a>
+      <a href="#" onclick="showModule('procurement')">Procurement</a>
+      <a href="#" onclick="showModule('leave')">Leave</a>
+    </div>
+    
+    <!-- Modules -->
+    <div id="registration" class="module">
+      <h2>Employee Registration</h2>
+      <input type="text" placeholder="Employee Name" />
+      <input type="email" placeholder="Email" />
+      <input type="text" placeholder="Department" />
+      <input type="password" placeholder="Password" />
+      <button>Register</button>
+    </div>
+    
+    <div id="login" class="module">
+      <h2>Login</h2>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button>Login</button>
+    </div>
+    
+    <div id="finance" class="module">
+      <h2>Finance</h2>
+      <p>Financial information related to payroll, bonuses, and deductions.</p>
+      <!-- Add finance-related fields or links -->
+    </div>
+    
+    <div id="departments" class="module">
+      <h2>Departments</h2>
+      <p>View and manage different departments within the organization.</p>
+      <!-- Add department management functionality -->
+    </div>
+    
+    <div id="procurement" class="module">
+      <h2>Procurement</h2>
+      <p>Procurement requests and approvals.</p>
+      <!-- Add procurement-related fields or links -->
+    </div>
+    
+    <div id="leave" class="module">
+      <h2>Leave Management</h2>
+      <p>Manage leave applications and status.</p>
+      <!-- Add leave management functionality -->
+    </div>
+  </div>
+
+  <script>
+    function showModule(moduleId) {
+      // Hide all modules
+      var modules = document.querySelectorAll('.module');
+      modules.forEach(function(module) {
+        module.classList.remove('active');
+      });
+
+      // Show selected module
+      document.getElementById(moduleId).classList.add('active');
+    }
+  </script>
+</body>
+</html>

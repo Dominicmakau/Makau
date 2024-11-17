@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hsl(240, 30%, 95%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .weather-container {
+            background-color: #faf6f6;
+            border-radius: 12px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 400px;
+            text-align: center;
+        }
+        .search-box {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px 0 0 8px;
+            font-size: 16px;
+        }
+        .search-box button {
+            padding: 30px 40px;
+            background-color: #7c3aed;
+            color: #fff;
+            border: none;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .city {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .weather-info {
+            color: #555;
+            margin: 5px 0;
+        }
+        .weather-info span {
+            color: #ff4c4c;
+            font-weight: bold;
+        }
+        .temp {
+            font-size: 50px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .temp img {
+            width: 10px;
+            height: 10px;
+            margin-right: 10px;
+        }
+        .footer {
+            margin-top: 1%;
+            font-size: 15px;
+            color: #2c1fa2;
+        }
+        .footer a {
+            color: #5a1bc0cf;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter a city.." />
+            <button>Search</button>
+        </div>
+        <div class="weather-details">
+            <p class="city">Paris</p>
+            <p class="weather-info">Tuesday 07:45, moderate rain</p>
+            <p class="weather-info">Humidity: <span>87%</span>, Wind: <span>7.2km/h</span></p>
+            <div class="temp">
+                <img src="https://img.icons8.com/emoji/48/000000/sun-emoji.png" alt="Weather Icon">
+                24°C
+            </div>
+        </div>
+        <div class="footer">
+            This project was coded by <a href="#">DOMINIC MAKAU</a>
+        </div>
+    </div>
+</body>
+</html>
