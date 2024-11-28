@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: #d3d3d3;
+      width: 500px;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+    }
+    .container h1 {
+      font-size: 24px;
+      color: #5e321f;
+      margin-bottom: 20px;
+    }
+    .search-box {
+      margin-bottom: 20px;
+    }
+    .search-box input {
+      width: 70%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .search-box button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #800080;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .weather-info {
+      font-size: 10px;
+      margin: 10px 0;
+    }
+    .temperature {
+      font-size: 40px;
+      color: #000;
+    }
+    .forecast {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+    .forecast div {
+      text-align: center;
+      font-size: 15px;
+    }
+    .footer {
+      font-size: 11px;
+      color: #555;
+      margin-top: 20px;
+    }
+    .footer a {
+      color: #800080;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to our Weather application</h1>
+    <div class="search-box">
+      <input type="text" placeholder="Enter city name">
+      <button>SEARCH</button>
+    </div>
+    <div class="weather-info">
+      <h2>Paris</h2>
+      <p>Tuesday 14:40, scattered clouds</p>
+      <p>Humidity: 66, Wind Speed: 4.3</p>
+    </div>
+    <div class="temperature">
+      12°C
+    </div>
+    <div class="forecast">
+      <div>
+        <p>Mon</p>
+        <img src="🌦 ">
+        <p>15° | 19°</p>
+      </div>
+      <div>
+        <p>Tue</p>
+        <img src="🌦">
+        <p>15° | 19°</p>
+      </div>
+      <div>
+        <p>Wed</p>
+        <img src="🌦">
+        <p>15° | 19°</p>
+      </div>
+      <div>
+        <p>Thu</p>
+        <img src="🌦">
+        <p>15° | 19°</p>
+      </div>
+      <div>
+        <p>Fri</p>
+        <img src="🌦">
+        <p>15° | 19°</p>
+      </div>
+      <div>
+        <p>Sat</p>
+        <img src="🌦">
+        <p>15° | 19°</p>
+      </div>
+      <div>
+        <p>Sun</p>
+        <img src="🌦">
+        <p>15° | 19°</p>
+      </div>
+    </div>
+    <div class="footer">
+      Coded by <a href="#">Dominic Makau</a> and is on <a href="#">GitHub</a> and hosted by <a href="#">Netlify</a>. <br>
+      The design was done using Figma.
+    </div>
+  </div>
+</body>
+</html>

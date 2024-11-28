@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Account</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+    }
+    .container {
+      width: 500px;
+      margin: 0 auto;
+      padding: 100px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      text-align: center;
+    }
+    form {
+      display: block;
+      flex-direction: column;
+    }
+    label {
+      margin-bottom: 5px;
+    }
+    input, select, button {
+      margin-bottom: 25px;
+      padding: 3px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+    .error {
+      color: red;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+    button {
+      width: 48%;
+      cursor: pointer;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Register Account</h2>
+    <form>
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+      <div class="error">User name must be at least 4 characters</div>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <div class="error">Password must be at least 4 characters</div>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+      <div class="error">Passwords do not match</div>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <div class="error">Invalid email format</div>
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" placeholder="Format: XXXX-XXXX-XXXX" required>
+      <div class="error">Invalid phone number</div>
+
+      <label for="zipCode">Zip Code:</label>
+      <input type="text" id="zipCode" name="zipCode" required>
+      <div class="error">Invalid Zip Code</div>
+
+      <label for="cardType">Card Type:</label>
+      <select id="cardType" name="cardType">
+        <option value="Visa">Visa</option>
+        <option value="MasterCard">MasterCard</option>
+        <option value="AmericanExpress">American Express</option>
+      </select>
+
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="Format: 1111-2222-3333-4444" required>
+      <div class="error">Invalid card number format</div>
+
+      <label for="expirationDate">Expiration Date:</label>
+      <input type="date" id="expirationDate" name="expirationDate" required>
+      <div class="error">Invalid date format</div>
+
+      <div class="buttons">
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
